@@ -43,15 +43,7 @@ const findAll = async (req, res) => {
 const findByIdController = async (req, res) => {
   const id = req.params.id;
 
-  if (!mongoose.Types.ObjectId.isValid(id)) {
-    return res.status(400).send({ message: "ID não é valido" });
-  }
-
   const findUniqueId = await findByIdService.findByIdService(id);
-
-  if (!findUniqueId) {
-    return res.status(400).send({ message: "Usuario não encontrado" });
-  }
 
   res.status(200).send(findUniqueId);
 };
