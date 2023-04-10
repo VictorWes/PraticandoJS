@@ -7,9 +7,10 @@ import { validUser, validId } from "../middlewares/global.middlewares.js";
 
 const router = express.Router();
 
-router.get("/:id", validId, validUser, findByIdController.findByIdController);
+
 router.patch("/:id", findAndRenameController.findAndRenameController);
-router.post("", cadastroCliente.cadastroCliente);
-router.get("", findAll.findAll);
+router.post("/user", cadastroCliente.cadastroCliente);
+router.get("/users", findAll.findAll);
+router.get("/:id", validId, validUser, findByIdController.findByIdController);
 
 export default router;

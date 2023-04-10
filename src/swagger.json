@@ -19,7 +19,7 @@
     }
   ],
   "paths": {
-    "/create": {
+    "/create/user": {
       "post": {
         "summary": "Create a new user",
         "description": "Route responsible for creating a new user",
@@ -63,7 +63,7 @@
         }
       }
     },
-    "/findall": {
+    "/findall/users": {
       "get": {
         "summary": "Search all users",
         "description": "Route responsible for fetching all users",
