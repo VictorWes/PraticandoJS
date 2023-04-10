@@ -14,7 +14,6 @@ app.use(express.json());
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`Servidor rodando na porta ${port}`));
 
-app.use("/doc", routerSwagger);
 app.use("/createnova", routerNews);
 app.use("/feednews", routerNews);
 app.use("/news", routerNews);
@@ -24,3 +23,5 @@ app.use("/findall", router);
 app.use("/", router);
 
 app.use("/auth", routerAuth);
+
+app.use("/doc", routerSwagger);
