@@ -5,12 +5,12 @@ import findByIdService from "../services/service.user.js";
 import alterarCadastroService from "../services/service.user.js";
 const cadastroCliente = async (req, res) => {
   try {
-    let { name, username, password, email } = req.body;
+    let { name, username, password, email, avatar, background } = req.body;
 
-    if (!name || !username || !password || !email) {
+    if (!name || !username || !password || !email || !avatar || !background) {
       res
         .status(400)
-        .send({ message: "Por favor preencha o campo corretamente" });
+        .send({ message: "Por favor preencha o campo corretamente cadastro" });
     }
 
     const criarCadastro = await novoCadastroService.novoCadastroService(
@@ -28,6 +28,8 @@ const cadastroCliente = async (req, res) => {
         username,
         password,
         email,
+        avatar,
+        background
       },
       message: "Usuario criado com sucesso",
     });
@@ -76,9 +78,9 @@ const findAndRenameController = async (req, res) => {
       return res.status(400).send({ message: "Usuario não encontrado" });
     }
 
-    let { name, username, password, email } = req.body;
+    let { name, username, password, email, avatar, background } = req.body;
 
-    if (!name && !username && !password && !email) {
+    if (!name && !username && !password && !email && !avatar && !background) {
       res
         .status(400)
         .send({ message: "Por favor preencha o campo corretamente" });
@@ -89,7 +91,9 @@ const findAndRenameController = async (req, res) => {
       name,
       username,
       password,
-      email
+      email,
+      avatar,
+      background
     );
 
     res.status(200).send({ message: "Usuario atualizado" });

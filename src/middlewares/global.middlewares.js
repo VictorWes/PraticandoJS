@@ -5,7 +5,7 @@ export const validId = async (req, res, next) => {
   const id = req.params.id;
 
   if (!mongoose.Types.ObjectId.isValid(id)) {
-    return res.status(400).send({ message: "Invalid id!" });
+    return res.status(400).send({ message: "Invalid id! ERRO midleware" });
   }
 
   next();

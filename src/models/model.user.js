@@ -23,10 +23,19 @@ const newCliente = new mongoose.Schema({
     required: true,
     unique: true,
   },
+
+  avatar: {
+    type: String,
+    required: true,
+  },
+  background: {
+    type: String,
+    required: true,
+  },
 });
 
 newCliente.pre("save", async function (next) {
-  this.password = bcrypt.hash(this.password, 10);
+  this.password = await bcrypt.hash(this.password, 10);
 
   next();
 });
