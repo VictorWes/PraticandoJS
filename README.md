@@ -1,5 +1,7 @@
 Ola! Esse repositório se trata de uma API criada mediante um curso realizado no YouTube chamado Curso do ZERO a MERN Stack, no qual acompanhei 31 aulas e conforme o que o professor foi ensinando fui criando o meu modelo. 
 
+Api criada é para um site de noticias
+
 Nessa API consegui masterizar um pouco mais o meu CRUD, realizei a minha primeira documentação no swagger com acompanhamento do professor.
 
 Banco utilizado (Mongo DB atlas)
@@ -21,5 +23,6 @@ Deploy realizado no Render.
 Na API foi feito todo o CRUD, sendo possível criar usuários, criar noticias, localizar noticia especifica, localizar usuário.
 
 Api se encontra na branch Master, se desejar baixar para testar em localhost basta utilizar o npm install para instalar as dependências e o comando npm start para iniciar o projeto.
+
 
 
