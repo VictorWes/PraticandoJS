@@ -6,7 +6,7 @@ Nessa API consegui masterizar um pouco mais o meu CRUD, realizei a minha primeir
 
 Banco utilizado (Mongo DB atlas)
 
-Realizei a divisão do projeto em (Routes,Controller,Models,Services)
+Realizei a divisão do projeto em (Routes,Controller,Models,Services, Middleware)
 
 Utilizei o JWT para autenticação
 
