@@ -1,4 +1,4 @@
-Ola! Esse repositório se trata de uma API criada mediante um curso realizado no YouTube chamado Curso do ZERO a MERN Stack, no qual acompanhei 31 aulas e conforme o que o professor foi ensinando fui criando o meu modelo. 
+Ola! Esse repositório se trata de uma API criada mediante um curso realizado no YouTube chamado Curso do ZERO a MERN Stack, no qual acompanhei 31 aulas e conforme o que o professor foi ensinando fui criando o meu modelo. (Projeto se encontra na branch master)
 
 Api criada é para um site de noticias
 
