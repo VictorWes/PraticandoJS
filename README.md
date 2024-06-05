@@ -16,7 +16,7 @@ Express para criação do servidor/rotas
 
 Tipo de importação/exportação módulos (ES modules)
 
-Documentação realizada no swagger https://praticandojs-news-breaking.onrender.com/doc
+Documentação realizada no swagger 
 
 Deploy realizado no Render.
 
